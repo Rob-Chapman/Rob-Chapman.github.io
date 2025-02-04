@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Chapman - CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #2c3e50;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        h3 {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-top: 0;
+        }
+
+        .contact {
+            color: var(--secondary-color);
+            margin-top: 0.5rem;
+        }
+
+        .section {
+            margin: 2rem 0;
+        }
+
+        .achievement {
+            background-color: var(--light-bg);
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background-color: var(--light-bg);
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        .skill-category h4 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+
+        .publication {
+            margin: 1rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .date {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <style>
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .header-text {
+            flex: 1;
+        }
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+    <header>
+        <div class="header-container">
+            <img src="DSC1044sq700x700.jpg" alt="Robert Chapman" class="profile-pic">
+            <div class="header-text">
+                <h1>Robert Chapman</h1>
+                <h3>Physicist | Biotechnologist | Laboratory Automation Specialist</h3>
+                <div class="contact">
+                    <button onclick="openMailto()" class="contact-button">Contact</button> | Brisbane, QLD, Australia
+                </div>
+                <script>
+                    function openMailto() {
+                        window.location.href = 'mailto:' + 'chapman.robert' + '@' + 'gmail.com' + '?subject=CV%20Contact';
+                    }
+                </script>
+                <style>
+                    .contact-button {
+                        background: none;
+                        border: 1px solid var(--accent-color);
+                        color: var(--text-color);
+                        padding: 0.25rem 0.75rem;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: 0.9rem;
+                    }
+                    .contact-button:hover {
+                        background: var(--accent-color);
+                        color: white;
+                    }
+                </style>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <p>
+            Physicist turned biotechnologist specializing in laboratory automation and data processing optimization. 
+            Combines deep theoretical knowledge of physical systems with practical engineering solutions to accelerate research workflows. 
+            Currently developing high-throughput screening and automation systems for algae cultivation at the Centre for Solar Biotechnology.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Research Experience</h2>
+        <div class="achievement">
+            <h3>Senior Research Assistant (2023-Present)</h3>
+            <strong>Centre for Solar Biotechnology, University of Queensland</strong>
+            <ul>
+                <li>Lead development of automated data processing systems for high-throughput algae screening</li>
+                <li>Design and implement control systems for automated algae harvesting</li>
+                <li>Optimize growth conditions through application of optical physics principles</li>
+                <li>Collaborate with research teams to improve experimental workflows and data analysis</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Education</h2>
+        <div class="achievement">
+            <h3>Master of Molecular Biology (2022-2024)</h3>
+            <strong>University of Queensland</strong>
+            <ul>
+                <li>Dean's Commendation for Academic Excellence (2024)</li>
+                <li>Focus on high-throughput screening and biotechnology applications</li>
+            </ul>
+        </div>
+
+        <div class="achievement">
+            <h3>PhD in Physics (2011-2015)</h3>
+            <strong>University of Queensland</strong>
+            <ul>
+                <li>Thesis: "Nitrogen-Vacancy Centres in Diamond: Internal Dynamics and Nanoscale Measurements"</li>
+                <li>Research focused on quantum systems and optical measurements</li>
+            </ul>
+        </div>
+
+        <div class="achievement">
+            <h3>Bachelor of Science (Honours Class I) (2010)</h3>
+            <strong>University of Queensland</strong>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Key Achievements</h2>
+        <ul>
+            <li>Designed and implemented automated data processing pipeline for high-throughput algae screening, reducing analysis time from 132 days to 22 minutes using Julia-based non-linear regression models</li>
+            <li>Developed automated filtration control system using Arduino and PID control, improving harvest consistency and yield through pressure-optimized backwash cycling</li>
+            <li>Enhanced biomass yield through optical optimization of growth conditions, applying physics expertise to identify and correct sub-optimal lighting spectra</li>
+            <li>Published in high-impact journals across physics and biotechnology, with work spanning quantum systems, optical imaging, and high-throughput screening methods</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Technical</h4>
+                <ul>
+                    <li>Programming: Julia, Python, MATLAB, C++</li>
+                    <li>Hardware: Arduino, laboratory automation systems</li>
+                    <li>Data Analysis: Non-linear regression, growth curve analysis</li>
+                    <li>Laboratory: High-throughput screening, optical measurements</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Professional</h4>
+                <ul>
+                    <li>Technical Communication & Presentation</li>
+                    <li>Project Management & Systematization</li>
+                    <li>Stakeholder Management</li>
+                    <li>Business Development & Client Relations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Publications</h2>
+        <div class="publication">
+            <p>"High-Throughput Screening to Accelerate Microalgae-Based Phycochemical Production"<br>
+            Book Chapter in <em>Value-added Products from Algae</em> (2023)<br>
+            <a href="https://doi.org/10.1007/978-3-031-42026-9_10" target="_blank">DOI: 10.1007/978-3-031-42026-9_10</a></p>
+
+            <p>"All-Optical Thermometry and Thermal Properties of the Optically Detected Spin Resonances of the NV– Center in Nanodiamond"<br>
+            <em>Nano Letters</em> (2014)<br>
+            <a href="https://doi.org/10.1021/nl501841d" target="_blank">DOI: 10.1021/nl501841d</a></p>
+
+            <p>"Background-free imaging of luminescent nanodiamonds using external magnetic field for contrast enhancement"<br>
+            <em>Optics Letters</em> (2013)<br>
+            <a href="https://doi.org/10.1364/OL.38.001847" target="_blank">DOI: 10.1364/OL.38.001847</a></p>
+
+            <p>"Accurate measurements of the Raman scattering coefficient and the depolarization ratio in liquid water"<br>
+            <em>Applied Optics</em> (2013)<br>
+            <a href="https://doi.org/10.1364/AO.52.002503" target="_blank">DOI: 10.1364/AO.52.002503</a></p>
+
+            <p>"Anomalous saturation effects due to optical spin depolarization in nitrogen-vacancy centers in diamond nanocrystals"<br>
+            <em>Physical Review B</em> (2012)<br>
+            <a href="https://doi.org/10.1103/PhysRevB.86.045204" target="_blank">DOI: 10.1103/PhysRevB.86.045204</a></p>
+
+            <p>"Nitrogen-vacancy centers in nano-diamond reversibly decrease the luminescence quantum yield under strong pulsed-laser irradiation"<br>
+            <em>New Journal of Physics</em> (2011)<br>
+            <a href="https://doi.org/10.1088/1367-2630/13/4/045001" target="_blank">DOI: 10.1088/1367-2630/13/4/045001</a></p>
+
+            <p>"Quantitative luminescence microscopy on Nitrogen-Vacancy Centres in diamond: Saturation effects under pulsed excitation"<br>
+            <em>Chemical Physics Letters</em> (2011)<br>
+            <a href="https://doi.org/10.1016/j.cplett.2011.03.057" target="_blank">DOI: 10.1016/j.cplett.2011.03.057</a></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Professional Development</h2>
+        <div class="achievement">
+            <p><strong>UQ Ventures 2024 Singapore Startup AdVenture Program:</strong> Intensive entrepreneurship program focused on biotech startup development and Singapore's innovation ecosystem</p>
+            <p><strong>Toastmasters International:</strong> Achieved Competent Communicator and Advanced Leadership Bronze certifications; served as President of Indooroopilly Club</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Additional Experience</h2>
+        <div class="achievement">
+            <h3>Business Development Representative (2022)</h3>
+            <strong>Disrupt Digital</strong>
+            <ul>
+                <li>Developed systematic approach to technical solution development for SME clients</li>
+                <li>Translated complex technical concepts into actionable business strategies</li>
+            </ul>
+        </div>
+        <div class="achievement">
+            <h3>Administrative Assistant (2016-2021)</h3>
+            <strong>Mackay Family Care and Community Support Association</strong>
+            <ul>
+                <li>Redesigned and implemented new Quality Assurance system</li>
+                <li>Streamlined administrative processes through automation</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
